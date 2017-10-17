@@ -1,6 +1,6 @@
 body{
   background:#8ba987;
-  background: url('/home/alexander/FPI_Proyect/PICTURES/477025.jpg') no-repeat center center fixed;
+  background: url('../PICTURES/477025.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

@@ -1,6 +1,6 @@
 body{
 background:#8ba987;
-background: url('/home/alexander/FPI_Proyect/PICTURES/poker2.jpg') ;
+background: url('../PICTURES/poker2.jpg') ;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
