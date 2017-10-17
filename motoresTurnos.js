@@ -1,4 +1,5 @@
 // mecanismo de control de turnos
+<<<<<<< HEAD
 function llamar(){
   window.location='PokerHold.html';}
 //var iJugadores = 10;
@@ -44,12 +45,39 @@ function preFloop(iJugadores) {
   //var oJugadores = new Array(iJugadores);
   for (var i = 0; i < iJugadores; i++) {
     //oJugadores[i] = new Array(4);
+=======
+//var iJugadores = 10;
+//var oJugadores = new Array();
+
+function turnos(iJugadores) {
+  var turnos = 0;
+  while(turnos < 10){
+    switch (turnos) {
+      case 1:
+        preFloop(iJugadores);
+        break;
+      default:
+
+    }
+  }
+}
+//turno de pre-floop
+function preFloop(iJugadores) {
+  var oJugadores = new Array(iJugadores);
+  for (var i = 0; i < iJugadores; i++) {
+    oJugadores[i] = new Array(4);
+>>>>>>> 17922860054212477c50bbeb772a011ee8ce5760
     for (var i2 = 2; i2 < 4; i2++) {
         oJugadores[i][i2]= repartidor();
     }
   }
+<<<<<<< HEAD
   console.log(oJugadores[0][2]);
   console.log(oJugadores[1][2]);
+=======
+  //console.log(oJugadores[0][2]);
+  //console.log(oJugadores[1][2]);
+>>>>>>> 17922860054212477c50bbeb772a011ee8ce5760
 }
 //Repartidor
 function  repartidor(){
