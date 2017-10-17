@@ -1,5 +1,4 @@
 // mecanismo de control de turnos
-//<<<<<<< HEAD
 function llamar(){
   window.location='PokerHold.html';
 }
@@ -11,65 +10,53 @@ for (var i = 0; i < 10; i++) {
   for (var i2 = 0; i2 < 5; i2++) {
     oJugadores[i][i2]="";
   }};
-//function CrearArreglo(iJugadores) {
-//}
-//return oJugadores;
-//}
-//obtener jugadores
 
+//obtener jugadores
 function obtener() {
   var iJuga = document.getElementById("jug").value;
   //CrearArreglo(iJuga);
   turnos(iJuga);
+  posiciones(iJuga);
 }
+//distribuir las posiciones
+function posiciones(iJugadores) {
+  if (iJugadores==2) {
+    oJugadores[0][2]="div6";
+    oJugadores[1][2]="div7";
+  }
+  console.log(oJugadores[0][2]);
+  var e = "jugador";
+  for (var i = 0; i < iJugadores; i++) {
+   document.getElementById(oJugadores[i][2]).innerHTML = e;
+  }
 
-
-
-
+}
 
 function turnos(iJugadores) {
   var turnos = 0;
-
-preFloop(iJugadores);
 //  while(turnos < 10){
-//    switch (turnos) {
-//      case 1:
-
-//        break;
-//      default:
-
-//    }
-//  }
-}
-
-function turnos(iJugadores) {
-  var turnos = 0;
-  //while(turnos < 10){
-    //switch (turnos) {
+  //  switch (turnos) {
       //case 1:
         preFloop(iJugadores);
-        //break;
-      //default:
+      //  break;
+    //  default:
 
-    //}
+  //  }
   //}
 }
 
 //turno de pre-floop
 function preFloop(iJugadores) {
   for (var i = 0; i < iJugadores; i++) {
-//>>>>>>> 17922860054212477c50bbeb772a011ee8ce5760
-    for (var i2 = 2; i2 < 4; i2++) {
-        oJugadores[i][i2]= repartidor();
+    for (var i2 = 3; i2 < 5; i2++) {
+      oJugadores[i][i2]= repartidor();
     }
   }
-//<<<<<<< HEAD
-  console.log(oJugadores[0][2]);
-  console.log(oJugadores[1][2]);
-//=======
-  //console.log(oJugadores[0][2]);
-  //console.log(oJugadores[1][2]);
-//>>>>>>> 17922860054212477c50bbeb772a011ee8ce5760
+  //console.log(oJugadores[0][3]);
+  //console.log(oJugadores[1][3]);
+}
+function apuestas(iJugadores) {
+
 }
 //Repartidor
 function  repartidor(){
