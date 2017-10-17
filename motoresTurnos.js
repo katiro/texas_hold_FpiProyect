@@ -7,6 +7,7 @@ function turnos(iJugadores) {
   while(turnos < 10){
     switch (turnos) {
       case 1:
+        preFloop(iJugadores);
         break;
       default:
 
