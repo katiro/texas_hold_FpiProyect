@@ -23,8 +23,8 @@ function preFloop(iJugadores) {
         oJugadores[i][i2]= repartidor();
     }
   }
-  console.log(oJugadores[0][2]);
-  console.log(oJugadores[1][2]);
+  //console.log(oJugadores[0][2]);
+  //console.log(oJugadores[1][2]);
 }
 //Repartidor
 function  repartidor(){
